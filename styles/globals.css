@@ -1,16 +1,27 @@
+/*
+PALLET:
+
+#88BDBC
+#254E85
+#112D32
+#4F4A41
+#6E6658
+*/
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ padding: 0;
+ margin: 0;
+ font-family: 'Inconsolata', monospace !important;
+ background-color: #88BDBC;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+ color: inherit;
+ text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
+

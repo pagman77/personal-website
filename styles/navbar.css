@@ -1,0 +1,20 @@
+/*
+PALLET:
+
+#88BDBC
+#254E58
+#112D32
+#4F4A41
+#6E6658
+*/
+
+.navbar{
+ background-color: #88BDBC;
+}
+
+a {
+ text-decoration: none;
+}
+a:hover{
+ color: #254E58;;
+}
