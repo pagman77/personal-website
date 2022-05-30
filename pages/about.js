@@ -1,14 +1,14 @@
 import Navbar from '../comps/Navbar';
 import Footer from '../comps/Footer';
-import AboutMe from '../comps/AboutMe';
+import About from '../comps/About';
 
-export default function About() {
+export default function aboutMe() {
 
 
   return (
     <>
       <Navbar />
-        <AboutMe/>
+        <About/>
       <Footer />
     </>
   );

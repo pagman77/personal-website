@@ -1,0 +1,64 @@
+/*
+PALLET:
+
+#88BDBC
+#254E58
+#112D32
+#4F4A41
+#6E6658
+*/
+
+.nav {
+ display: inline-flex;
+ flex: .75;
+ padding: rem 0;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ align-items: center;
+ width: 100%;
+}
+
+.nav a {
+ text-decoration: none;
+ margin: 1rem;
+ color: #254E58;
+}
+
+.nav a:hover {
+ color: #112D32
+}
+
+.nav li {
+ display: inline-flex;
+
+}
+
+.left {
+ width: 100%;
+ display: flex;
+ justify-content: flex-start;
+ margin-left: 1.5rem;
+
+}
+
+.right {
+ width: 100%;
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 1.5rem;
+}
+
+
+/* .navLink{
+ color: #254E58;
+}
+
+
+.link {
+ text-decoration: none;
+}
+.link:hover{
+ color: #112D32;
+} */
+

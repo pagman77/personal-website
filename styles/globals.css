@@ -12,13 +12,9 @@ html,
 body {
  padding: 0;
  margin: 0;
+ height: 100%;
  font-family: 'Inconsolata', monospace !important;
  background-color: #88BDBC;
-}
-
-a {
- color: inherit;
- text-decoration: none;
 }
 
 * {

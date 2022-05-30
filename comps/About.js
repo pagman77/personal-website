@@ -1,4 +1,4 @@
-export default function AboutMe(){
+export default function About(){
 
   return(
     <div className="container mt-5 pt-5 mb-5 pb-5">
@@ -16,8 +16,7 @@ export default function AboutMe(){
             <a className="text-decoration-none text-dark" href="http://www.rithmschool.com" target="blank">Rithm School</a>
             &nbsp;to hone my skills in full-stack web development.
           </p>
-          <hr />
-          <a className="btn btn-sm" href="../public/paglione_resume.pdf" download role="button">Download my resume</a>
+          <a href="../public/paglione_resume.pdf" download role="button">Download my resume</a>
         </div>
       </div>
     </div>
