@@ -7,12 +7,15 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className={styles.grid}>
-      <Image className={styles.card} src="/headshot.png" alt="Photo of Michael" width={175} height={250}/>
-      <div>
-        <h2 className={styles.title}>Michael Paglione</h2>
-        <p className={styles.desciption}>Full-Stack Engineer</p>
-      </div>
+      <div className={styles.main}>
+        <div className={styles.photo}>
+          <Image className={styles.photo} src="/headshot.png" alt="Photo of Michael" width={175} height={250} />
+        </div>
+        <div className={styles.card}>
+          <h2 className={styles.title}>Michael Paglione</h2>
+          <p>Full-Stack Engineer</p>
+          <p><small>Javascript | ReactJS | Python | Flask</small></p>
+        </div>
       </div>
       <Footer />
     </>
