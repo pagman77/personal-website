@@ -1,6 +1,6 @@
 const BLOG_POSTS = [
   {
-    id: 1,
+    id: "1",
     date: "3/6/22",
     title: "The Day Before Rithm",
     body: [`The day before starting a life-changing bootcamp has me filled with lots of emotions. I have read and consumed a MASSIVE
@@ -83,7 +83,7 @@ const BLOG_POSTS = [
     of dread go away when you start to reflect positively on your accomplishments. Measure your successes in months, or
     maybe weeks, not days. This is a marathon, not a sprint.`,
 
-    `Give yourself permission to fail. You’re not supposed to be great at it yet, that’s why you’re learning.</p>`]
+    `Give yourself permission to fail. You’re not supposed to be great at it yet, that’s why you’re learning.`]
 
   }
 

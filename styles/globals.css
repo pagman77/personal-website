@@ -2,7 +2,7 @@
 PALLET:
 
 #88BDBC
-#254E85
+#254E58
 #112D32
 #4F4A41
 #6E6658
@@ -10,14 +10,77 @@ PALLET:
 
 html,
 body {
- padding: 0;
- margin: 0;
- height: 100%;
- font-family: 'Inconsolata', monospace !important;
+ font-family: 'Inconsolata', monospace;
  background-color: #88BDBC;
 }
 
-* {
- box-sizing: border-box;
+.navbar a {
+ color: #254E58;
+ margin: 1.1rem;
 }
 
+.navbar a:hover {
+ color: #112D32;
+}
+
+.headshot {
+ border-radius: 50px
+}
+
+.about a {
+ color: #254E58;
+}
+
+.about a:hover {
+ color: #112D32;
+}
+
+.blog a {
+ color: #254E58;
+ font-size: 1.8rem;
+}
+
+.blog a:hover {
+ color: #112D32;
+}
+
+.contact-btn {
+ color: #254E58;
+ border: 2px, solid, #9fd4e1;
+ background-color: #88BDBC;
+ border-radius: 5px;
+ font-size: 1.15rem;
+}
+
+.contact-btn:hover {
+ color: #112D32;
+ background-color: #9fd4e1;
+}
+
+.project-btn {
+ color: #254E58;
+ border: 2px, solid, #9fd4e1;
+ background-color: #88BDBC;
+ border-radius: 5px;
+ font-size: 1.05rem;
+}
+
+.project-btn:hover {
+ color: #112D32;
+ background-color: #9fd4e1;
+}
+
+.project-btn a {
+ color: #112D32;
+ text-decoration: none;
+}
+
+.footer a {
+ color: #254E58;
+ margin: 2rem;
+ font-size: 1.5rem;
+}
+
+.footer a:hover {
+ color: #112D32;
+}
