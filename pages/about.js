@@ -3,10 +3,10 @@ import Footer from '../comps/Footer';
 
 export default function aboutMe() {
   return (
-    <>
+    <div id='page-container'>
       <Navbar />
-      <div className="container-fluid my-5 about">
-        <div className="row d-flex align-items-center justify-content-center">
+      <div id="wrap" style={{ marginTop: 120 }} className="container-fluid about">
+        <div className="row mt-5 justify-content-center align-items-center">
           <div className="col-sm-12 col-md-4 mx-4">
             <h2>
               Hi, my name is Michael, and I love solving problems
@@ -22,11 +22,11 @@ export default function aboutMe() {
             </p>
           </div>
           <div className="col-12 text-center my-5">
-            <p><a href="../public/paglione_resume.pdf" download role="button">Download my resume here.</a></p>
+            <p><a href="/paglione_resume.pdf" download role="button">Download my resume here.</a></p>
           </div>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
-}
+};

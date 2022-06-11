@@ -4,12 +4,11 @@ import Link from 'next/link';
 
 export default function Home() {
 
-
   return (
-    <>
+    <div id='page-container'>
       <Navbar />
-      <div className="container-fluid my-5 blog">
-        <div className="row d-flex align-items-center justify-content-center">
+      <div id="wrap" style={{ marginTop: 120 }} className="container-fluid blog">
+        <div className="row align-items-center justify-content-center">
           <div className="col-sm-12 col-md-4 mx-4">
             <h2>
               Sometimes I write about the things I'm learning
@@ -31,7 +30,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

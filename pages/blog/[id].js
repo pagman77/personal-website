@@ -1,5 +1,6 @@
 import { getData } from "../api/blog/posts";
 import Navbar from "../../comps/Navbar";
+import Footer from "../../comps/Footer";
 
 export async function getStaticPaths() {
   const posts = await getData();
@@ -23,20 +24,24 @@ export async function getStaticProps({ params }) {
 export default function Post({ post }) {
 
   return (
-    <>
+    <div id='page-container'>
       <Navbar />
-      <div className="container mx-5">
-        <h1 className="mt-2 mb-5">
-          {post.date} - {post.title}
-        </h1>
-        {post.body.map((p, i) => {
-          return (
-            <p key={i}>{p}</p>
-          );
-        })}
-        <div className="my-5"></div>
+      <div id="wrap" className="container-fluid w-75">
+        <div className="row">
+          <div className="col-12">
+            <h1 className="mt-5 mb-5 text-center">
+              {post.date} - {post.title}
+            </h1>
+            {post.body.map((p, i) => {
+              return (
+                <p key={i}>{p}</p>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

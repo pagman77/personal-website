@@ -32,9 +32,9 @@ export default function Contact() {
   }
 
   return (
-    <>
+    <div id='page-container'>
       <Navbar />
-      <div className='container contact'>
+      <div id="wrap" className='container contact'>
         <div className="row d-flex justify-content-center w-100 h-25 mt-5">
           <div className="col-12 w-50">
             <h3 className='text-center'>Get in touch with me!</h3>
@@ -102,6 +102,6 @@ export default function Contact() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

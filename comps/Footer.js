@@ -3,7 +3,7 @@ import { faInstagram, faFacebook, faLinkedin, faTwitter, faGithub } from '@forta
 
 export default function Footer() {
   return (
-    <footer className="footer text-center fixed-bottom my-2">
+    <footer id="footer" className="footer text-center">
       <div className='my-2'>
         <a href="https://www.linkedin.com/in/michael-paglione"
           target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>

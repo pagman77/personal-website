@@ -7,19 +7,18 @@ export default function Navbar() {
         <Link href="/">
           <a className="navbar-brand">MP</a>
         </Link>
+        <button className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="#main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
       </div>
 
-      <button className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse mx-5">
+      <div id="main-nav" className="collapse navbar-collapse mx-5">
         <div className="navbar-nav">
           <Link href="/about">
             <a className="nav-link active">About</a>
@@ -36,7 +35,6 @@ export default function Navbar() {
           <Link href="/contact">
             <a className="nav-link">Contact</a>
           </Link>
-
         </div>
       </div>
     </nav>

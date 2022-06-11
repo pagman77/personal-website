@@ -4,23 +4,23 @@ import Footer from '../comps/Footer';
 
 export default function Portfolio() {
   return (
-    <>
+    <div id='page-container'>
       <Navbar />
-      <div className='container my-5'>
+      <div id="wrap" className='container mt-5'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-12 text-center my-5'>
             <h2>Here are some of the things I've been working on...</h2>
           </div>
         </div>
-        <div id="portfolioSlide" className="carousel slide row d-flex align-items-center justify-content-center" data-bs-ride="carousel">
+        <div id="portfolioSlide" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
 
             {/* JOBLY SLIDE */}
-            <div id="jobly" className="carousel-item active col">
-              <div >
-                <Image src="/jobly.png" className="img-responsive" alt="Jobly App" height={300} width={500} />
+            <div id="jobly" className="carousel-item active text-center mt-3">
+              <div className='d-inline-block align-middle'>
+                <Image src="/jobly.png" className="img-responsive" alt="Jobly App" height={225} width={375} />
               </div>
-              <div className='text-center'>
+              <div className='text-center d-inline-block align-middle mx-2'>
                 <h3>Jobly</h3>
                 <h5>App for users seeking a job</h5>
                 <ul className='text-start'>
@@ -30,7 +30,7 @@ export default function Portfolio() {
                   <li><small>Authentication and authorization with bcrypt hashing and JSON web tokens</small></li>
                 </ul>
                 <p><small>Note: Server is hosted through Heroku, it may take a minute to wake up!</small></p>
-                <div>
+                <div className='mb-3'>
                   <button className="project-btn mx-1">
                     <a href="https://high-tax.surge.sh/" target="blank">Project Page</a>
                   </button>
@@ -42,9 +42,11 @@ export default function Portfolio() {
             </div>
 
             {/* WARBLER SLIDE */}
-            <div id="warbler" className="carousel-item">
-              <Image src="/Warbler.png" className="img-responsive col-4" alt="Jobly App" height={300} width={500} />
-              <div className='col-4 text-center'>
+            <div id="warbler" className="carousel-item text-center mt-3">
+              <div className='d-inline-block align-middle'>
+                <Image src="/Warbler.png" className="img-responsive" alt="Warbler App" height={225} width={375} />
+              </div>
+              <div className='text-center d-inline-block align-middle mx-2'>
                 <h3>Warbler</h3>
                 <h5>Twitter clone to connect with people</h5>
                 <ul className='text-start'>
@@ -54,12 +56,36 @@ export default function Portfolio() {
                   <li><small>Authentication and authorization with bcrypt hashing and flask session</small></li>
                 </ul>
                 <p><small>Note: Server is hosted through Heroku, it may take a minute to wake up!</small></p>
-                <div>
+                <div className='mb-3'>
                   <button className="project-btn mx-1">
-                    <a href="https://high-tax.surge.sh/" target="blank">Project Page</a>
+                    <a href="https://warbler-twclone.herokuapp.com" target="blank">Project Page</a>
                   </button>
                   <button className="project-btn mx-1">
-                    <a href="https://github.com/pagman77/react-jobly" target="blank">Github</a>
+                    <a href="https://github.com/pagman77/warbler" target="blank">Github</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* NUMS API SLIDE */}
+            <div id="numsapi" className="carousel-item text-center mt-2">
+              <div className='d-inline-block align-middle mx-3'>
+                <Image src="/nums_api_demo.gif" className="img-responsive rounded-3" alt="NumbersAPI App" height={300} width={150} />
+              </div>
+              <div className='text-center d-inline-block align-middle'>
+                <h3>NumbersAPI</h3>
+                <h5>Mobile app based on the API website</h5>
+                <ul className='text-start'>
+                  <li><small>Javscript and Typescript</small></li>
+                  <li><small>React and Ionic</small></li>
+                </ul>
+                <p><small>Check back soon for a link to the App Store!</small></p>
+                <div className='mb-3'>
+                  <button className="project-btn mx-1">
+                    <a href="http://www.numbersapi.com" target="blank">NumbersAPI Website</a>
+                  </button>
+                  <button className="project-btn mx-1">
+                    <a href="https://github.com/pagman77/nums-api-m" target="blank">Github</a>
                   </button>
                 </div>
               </div>
@@ -76,6 +102,6 @@ export default function Portfolio() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
