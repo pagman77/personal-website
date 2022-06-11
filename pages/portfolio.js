@@ -9,7 +9,7 @@ export default function Portfolio() {
       <div id="wrap" className='container mt-5'>
         <div className='row d-flex align-items-center justify-content-center'>
           <div className='col-12 text-center my-5'>
-            <h2>Here are some of the things I've been working on...</h2>
+            <h2>Here are some of the things I&apos;ve been working on...</h2>
           </div>
         </div>
         <div id="portfolioSlide" className="carousel slide" data-bs-ride="carousel">

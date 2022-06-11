@@ -85,7 +85,7 @@ export default function Contact() {
                 </select>
               </div>
 
-              <label className="mb-1" htmlFor="comments">I'd love to hear your thoughts.</label>
+              <label className="mb-1" htmlFor="comments">I&apos;d love to hear your thoughts.</label>
               <div className="form-group mb-3">
                 <textarea id="comments"
                   rows={6}

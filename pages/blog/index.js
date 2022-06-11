@@ -11,7 +11,7 @@ export default function Home() {
         <div className="row align-items-center justify-content-center">
           <div className="col-sm-12 col-md-4 mx-4">
             <h2>
-              Sometimes I write about the things I'm learning
+              Sometimes I write about the things I&apos;m learning
             </h2>
           </div>
           <div className="col-sm-12 col-md-4 mx-4">
