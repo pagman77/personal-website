@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import Navbar from '../comps/Navbar';
 import Footer from '../comps/Footer';
+import Head from 'next/head';
 
 export default function Portfolio() {
   return (
     <div id='page-container'>
+      <Head>
+        <title>Portfolio</title>
+      </Head>
       <Navbar />
       <div id="wrap" className='container mt-5'>
         <div className='row d-flex align-items-center justify-content-center'>

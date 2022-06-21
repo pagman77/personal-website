@@ -21,7 +21,7 @@ export default function Navbar() {
       <div id="main-nav" className="collapse navbar-collapse mx-5">
         <div className="navbar-nav">
           <Link href="/about">
-            <a className="nav-link active">About</a>
+            <a className="nav-link">About</a>
           </Link>
 
           <Link href="/blog">

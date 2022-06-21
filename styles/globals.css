@@ -55,6 +55,7 @@ body {
 
 .about a {
  color: #254E58;
+ text-decoration: none;
 }
 
 .about a:hover {
@@ -64,6 +65,7 @@ body {
 .blog a {
  color: #254E58;
  font-size: 1.8rem;
+ text-decoration: none;
 }
 
 .blog a:hover {
@@ -76,11 +78,25 @@ body {
  background-color: #88BDBC;
  border-radius: 5px;
  font-size: 1.15rem;
+ margin-top: 1.8rem;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .contact-btn:hover {
  color: #112D32;
  background-color: #9fd4e1;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.alert {
+ background-color: #88BDBC;
+ border: none;
+ font-size: 1.2rem;
 }
 
 .project-btn {
@@ -89,6 +105,7 @@ body {
  background-color: #88BDBC;
  border-radius: 5px;
  font-size: 1.05rem;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-btn:hover {
@@ -101,9 +118,10 @@ body {
  text-decoration: none;
 }
 
+
 .footer a {
  color: #254E58;
- margin: 2rem;
+ margin: 1.5rem;
  font-size: 1.5rem;
 }
 

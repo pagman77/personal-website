@@ -1,5 +1,6 @@
 import Navbar from '../comps/Navbar';
 import Footer from '../comps/Footer';
+import Head from 'next/head';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faMessage } from '@fortawesome/free-solid-svg-icons';
@@ -16,6 +17,7 @@ export default function Contact() {
   };
 
   const [formData, setFormData] = useState(intialFormData);
+  const [alert, setAlert] = useState(null);
 
   function handleChange(evt) {
     const { name, value } = evt.target;
@@ -27,16 +29,24 @@ export default function Contact() {
 
   async function handleSubmit(evt) {
     evt.preventDefault();
-    const res = await axios.post("/api/email", formData);
-    setFormData(intialFormData);
+    if (!formData.name || !formData.email || !formData.subject || !formData.comments) {
+      setAlert("Please fill out all fields!");
+    } else {
+      const res = await axios.post("/api/email", formData);
+      setFormData(intialFormData);
+      setAlert("Email sent!");
+    }
   }
 
   return (
     <div id='page-container'>
+      <Head>
+        <title>Contact</title>
+      </Head>
       <Navbar />
       <div id="wrap" className='container contact'>
         <div className="row d-flex justify-content-center w-100 h-25 mt-5">
-          <div className="col-12 w-50">
+          <div className="col-12 w-75">
             <h3 className='text-center'>Get in touch with me!</h3>
             <form className="my-3 p-3 rounded" onSubmit={handleSubmit}>
 
@@ -98,6 +108,9 @@ export default function Contact() {
                 <button type="submit" className="contact-btn">Submit</button>
               </div>
             </form>
+            <div className="alert alert-info text-center" role="alert">
+              {alert}
+            </div>
           </div>
         </div>
       </div>
