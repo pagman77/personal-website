@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
-      <div className="container-fluid mx-5">
+    <nav className="navbar navbar-expand-lg sticky-top">
+      <div className="nav-container container-fluid mx-5">
         <Link href="/">
           <a className="navbar-brand">MP</a>
         </Link>
@@ -20,21 +20,15 @@ export default function Navbar() {
 
       <div id="main-nav" className="collapse navbar-collapse mx-5">
         <div className="navbar-nav">
-          <Link href="/about">
-            <a className="nav-link">About</a>
-          </Link>
 
-          <Link href="/blog">
-            <a className="nav-link">Blog</a>
-          </Link>
+          <a href="#about" className="nav-link">About</a>
+          <a className="nav-link"
+            href="/paglione_resume_10_22_22.pdf"
+            download
+            role="button">Resume</a>
+          <a href="#portfolio" className="nav-link">Portfolio</a>
+          <a href="#contact" className="nav-link">Contact</a>
 
-          <Link href="/portfolio">
-            <a className="nav-link">Portfolio</a>
-          </Link>
-
-          <Link href="/contact">
-            <a className="nav-link">Contact</a>
-          </Link>
         </div>
       </div>
     </nav>
