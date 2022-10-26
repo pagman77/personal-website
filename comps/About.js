@@ -5,7 +5,7 @@ export default function About() {
     <div id='about' className="container about">
       <div className="row mt-5 justify-content-center align-items-center my-5">
         <div className="col-sm-12 col-md-4 text-center mx-5">
-          <Image className="music-headshot" src="/music_headshot.jpg" alt="Photo of Michael" width={450} height={450} />
+          <Image className="music-headshot" src="/music.jpg" alt="Photo of Michael" width={450} height={450} />
         </div>
         <div className="col-sm-12 col-md-4 text-star mx-5">
           <h2 className="mb-3">
