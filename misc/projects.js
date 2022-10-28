@@ -8,7 +8,7 @@ export const PROJECTS = [
     image: {
       width: 2880,
       height: 1644,
-      url: "/warbler.png"
+      url: "/Warbler.png"
     }
   },
   {
