@@ -37,7 +37,7 @@ export default function Contact() {
 
   return (
     <div id='contact' className='container contact'>
-      <div className="row d-flex justify-content-center w-100 h-25 mt-5 my-5">
+      <div className="row d-flex justify-content-center w-100 h-25 my-5">
         <div className="col-12 w-75">
           <h3 className='text-center'>Get in touch with me!</h3>
           <form className="my-3 p-3 rounded" onSubmit={handleSubmit}>

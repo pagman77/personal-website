@@ -10,6 +10,7 @@ import Portfolio from '../comps/Portfolio';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileLines } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { PROJECTS } from '../misc/projects';
 
 export default function Home() {
   return (
@@ -21,21 +22,25 @@ export default function Home() {
       </Head>
       <Navbar />
       <div className='container-fluid home my-5'>
-        <div className="row d-flex align-items-center justify-content-center">
-          <div className="col-sm-12 col-md-4 text-start mx-5">
+        <div className="row d-flex align-items-center justify-content-center p-3">
+          <div className="col-sm-12 col-md-4 text-center mx-5 mb-5">
             <h1 className='mb-3'>Hi, I&apos;m Michael</h1>
             <h3 className='mb-5'>Fullstack Software Engineer</h3>
-            <p>Hello, I&apos;m thrilled you made it to my website! I am a Fullstack Engineer that embraces innovative and creative software solutions. I greatly value human connection and learning.</p>
+            <p className='mb-3'>Hello, I&apos;m thrilled you made it to my website! I am a Fullstack Engineer that embraces innovative and creative software solutions. I greatly value human connection and learning.</p>
+            <div className=''>
 
-            <a id="contact-btn" className="btn" href="#contact">Let&apos;s get in touch!</a>
+              <a id="contact-btn" className="btn mb-3" href="#contact">Let&apos;s get in touch!</a>
+              <div className=' mb-2'>
 
-            <a href="/paglione_resume_10_22_22.pdf"
-              download
-              role="button"><FontAwesomeIcon icon={faFileLines} /></a>
-            <a href="https://www.linkedin.com/in/michael-paglione"
-              target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="https://github.com/pagman77"
-              target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="/paglione_resume_10_22_22.pdf"
+                  download
+                  role="button"><FontAwesomeIcon icon={faFileLines} /></a>
+                <a href="https://www.linkedin.com/in/michael-paglione"
+                  target="blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href="https://github.com/pagman77"
+                  target="blank"><FontAwesomeIcon icon={faGithub} /></a>
+              </div>
+            </div>
 
           </div>
           <div className="col-sm-12 col-md-4 text-center mx-5">
@@ -44,7 +49,7 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <Portfolio />
+      <Portfolio projects={PROJECTS} />
       <Contact />
       <Footer />
     </>

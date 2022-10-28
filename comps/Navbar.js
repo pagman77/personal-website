@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg sticky-top">
+    <nav className="navbar navbar-light navbar-expand-lg static-top">
       <div className="nav-container container-fluid mx-5">
         <Link href="/">
           <a className="navbar-brand">MP</a>

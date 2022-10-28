@@ -5,7 +5,6 @@
  --light-btn: #88BDBC;
  --light-outline: #112D32;
  --component-space: 10rem;
- --scroll-margin: 12rem;
 }
 
 html,
@@ -13,19 +12,23 @@ body {
  font-family: 'Inconsolata', monospace;
  background-color: var(--light-background);
 }
-
+i{
+ font-size: 2rem;
+ padding: .2rem;
+ color: var(--light-hover)
+}
 .navbar{
  height: 100px;
  background-color: #fffffe;
  margin-bottom: 8rem;
 }
 
-.navbar a {
+#main-nav a{
  color: var(--light-text);
  margin: 1.1rem;
 }
 
-.navbar a:hover {
+#main-nav a:hover{
  color: var(--light-btn);
 }
 
@@ -64,16 +67,16 @@ body {
 .about{
  margin-bottom: var(--component-space);
  margin-top: var(--component-space);
- scroll-margin-top: var(--scroll-margin);
+ scroll-margin-top: 14rem;
 }
 
 .about a {
- color: var(--light-text);
+ color: var(--light-btn);
  text-decoration: none;
 }
 
 .about a:hover {
- color: var(--light-btn);
+ color: var(--light-hover);
 }
 
 /* .blog a {
@@ -89,12 +92,22 @@ body {
 .portfolio{
  margin-bottom: var(--component-space);
  margin-top: var(--component-space);
- scroll-margin-top: var(--scroll-margin);
+ scroll-margin-top: 10rem;
 }
+
+/* .project{
+ width: 32rem;
+ height: 38rem;
+} */
+
+.card-title{
+ font-size: 1.6rem;
+}
+
 
 .contact{
  margin-top: var(--component-space);
- scroll-margin-top: var(--scroll-margin);
+ scroll-margin-top: 10rem;
 }
 
 .contact-btn {
