@@ -23,7 +23,7 @@ export default function Navbar() {
 
           <a href="#about" className="nav-link">About</a>
           <a className="nav-link"
-            href="/paglione_resume_10_22_22.pdf"
+            href="/paglione_resume_10_22_29.pdf"
             download
             role="button">Resume</a>
           <a href="#portfolio" className="nav-link">Portfolio</a>

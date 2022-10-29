@@ -25,7 +25,7 @@ export const PROJECTS = [
   },
   {
     title: "Personal Website",
-    description: "My portfolio website! Built using Next.js, and CSS3. Serverless function setup to accept HTTPS requests from the contact form and send an email using EmailJS. Images are optimized with Next.js and the website is fully responsive using Twitter Bootstrap. Fully SEO optimized, follows web best practices, is very accessible, and performs exceptionally well as measured by Google Lighthouse.",
+    description: "My portfolio website! Built using Next.js, and CSS3. Serverless function setup to accept HTTP requests from the contact form and send an email using EmailJS. Images are optimized with Next.js and the website is fully responsive using Twitter Bootstrap. Fully SEO optimized, follows web best practices, is very accessible, and performs exceptionally well as measured by Google Lighthouse.",
     technologies: ["bash", "bootstrap", "chrome", "css3", "git", "github", "heroku", "html5", "javascript", "nextjs", "nodejs", "npm", "react", "vscode"],
     page: null,
     github: "https://github.com/pagman77/personal-website",
@@ -37,7 +37,7 @@ export const PROJECTS = [
   },
   {
     title: "Friender - Connect With Friends",
-    description: "A tinder-ish clone where you can connect with friends based on geolocation. Backend built in Python and Flask using SQLAlchemy for data modeling and quering to a PostgreSQL database. Authentication and authorization using Bcrypt password hashing and JSON web tokens. Front end with React and Bootstrap components utilizing Reactstrap. Users can signup, update profiles, and upload images to an AmazonS3 bucket.",
+    description: "A tinder-ish clone where you can connect with friends based on geolocation. Backend built in Python and Flask using SQLAlchemy for data modeling and quering to a PostgreSQL database. Authentication and authorization using Bcrypt password hashing and JSON web tokens. Front end with React and Bootstrap components utilizing Reactstrap. Users can signup, update profiles, and upload images which are stored to an AmazonS3 bucket.",
     technologies: ["bash", "bootstrap", "chrome", "css3", "flask", "git", "github", "html5", "javascript", "nextjs", "nodejs", "npm", "postgresql", "python", "react", "sqlalchemy", "vscode"],
     page: null,
     github: "https://github.com/pagman77/react-friender",

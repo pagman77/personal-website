@@ -37,10 +37,10 @@ export default function Contact() {
 
   return (
     <div id='contact' className='container contact'>
-      <div className="row d-flex justify-content-center w-100 h-25 my-5">
+      <div className="row d-flex justify-content-center align-item-center my-5">
         <div className="col-12 w-75">
           <h3 className='text-center'>Get in touch with me!</h3>
-          <form className="my-3 p-3 rounded" onSubmit={handleSubmit}>
+          <form className="my-3 rounded" onSubmit={handleSubmit}>
 
             {/* NAME */}
 
@@ -48,7 +48,7 @@ export default function Contact() {
             <div className='input-group mb-3'>
               <span className='input-group-text'><FontAwesomeIcon icon={faUser} /></span>
               <input
-                className="form-control d-inline-flex"
+                className="form-control"
                 id="name"
                 onChange={handleChange}
                 name="name"
@@ -96,13 +96,11 @@ export default function Contact() {
                 onChange={handleChange}
                 value={formData.comments}></textarea>
             </div>
-            <div className="text-center m-2">
+            <div className="text-center my-2">
               <button type="submit" className="btn contact-btn">Submit</button>
             </div>
           </form>
-          <div className="alert alert-info text-center" role="alert">
-            {alert}
-          </div>
+          {alert && <div className="alert alert-danger text-center" role="alert">{alert}</div>}
         </div>
       </div>
     </div>
