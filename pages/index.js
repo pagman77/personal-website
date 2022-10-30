@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
+import { useState, useEffect } from 'react';
 
 import About from '../comps/About';
 import Contact from '../comps/Contact';
@@ -13,6 +14,18 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { PROJECTS } from '../misc/projects';
 
 export default function Home() {
+
+  const [theme, setTheme] = useState("light");
+
+  function switchTheme() {
+    if (theme === "light") setTheme("dark");
+    if (theme === "dark") setTheme("light");
+  }
+
+  useEffect(function toggleTheme() {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
     <>
       <Head>
@@ -20,7 +33,7 @@ export default function Home() {
         <meta name='description' content='Connecticut-based full-stack software engineer' />
         <meta name="keywords" content='software, engineer, developer, python, javascript, nextjs, react, express, node, sql, flask' />
       </Head>
-      <Navbar />
+      <Navbar switchTheme={switchTheme} theme={theme} />
       <div className='container-fluid home my-5'>
         <div className="row d-flex align-items-center justify-content-center p-3">
           <div className="col-sm-12 col-md-4 text-center mx-5 mb-5">

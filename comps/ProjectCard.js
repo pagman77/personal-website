@@ -28,8 +28,8 @@ export default function ProjectCard({ project }) {
     return projectIcons;
   }
   return (
-    <Card inverse outline color="dark" className="col-12 col-lg-5 m-5 p-3 project">
-      <CardHeader className="text-dark ">
+    <Card inverse outline className="col-12 col-lg-5 m-5 p-3 project">
+      <CardHeader>
         <CardTitle className='text-center card-title'>
           {project.title}
         </CardTitle>
@@ -39,7 +39,7 @@ export default function ProjectCard({ project }) {
         height={project.image.height}
         src={project.image.url}
         alt={project.title} />
-      <CardBody className="text-dark">
+      <CardBody>
         <CardText>
           <small>{project.description}</small>
         </CardText>

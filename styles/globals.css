@@ -1,35 +1,74 @@
 :root{
- --light-background: #ffffff;
- --light-text: #112D32;
- --light-hover: #254E58;
- --light-btn: #88BDBC;
- --light-outline: #112D32;
  --component-space: 10rem;
 }
+
+[data-theme="light"]{
+ --background: #ffffff;
+ --card-background: #f5f5f5;
+ --text: #112D32;
+ --btn: #254E58;
+ --btn-text: #88BDBC;
+ --hover: #88BDBC;
+}
+
+[data-theme="dark"] {
+ --background: #112D32;
+ --card-background: #254E58;
+ --text: #88BDBC;
+ --hover: #254E58;
+ --btn-text: #254E58;
+ --btn: #88BDBC;
+}
+
+
+/* GLOBAL */
 
 html,
 body {
  font-family: 'Inconsolata', monospace;
- background-color: var(--light-background);
+ background-color: var(--background);
+ color: var(--text);
 }
 i{
  font-size: 2rem;
  padding: .2rem;
- color: var(--light-hover)
+ color: var(--text)
 }
+
+
+/* NAVBAR  */
+
 .navbar{
  height: 100px;
- background-color: #fffffe;
+ background-color: var(--background);
  margin-bottom: 8rem;
 }
 
 #main-nav a{
- color: var(--light-text);
+ color: var(--btn);
  margin: 1.1rem;
 }
 
 #main-nav a:hover{
- color: var(--light-btn);
+ color: var(--hover);
+}
+
+.dark-btn{
+ color: var(--btn);
+ margin: 1.7rem;
+ font-size: 1.3rem;
+}
+
+.dark-btn:hover{
+ color: var(--hover);
+}
+
+.nav-container a{
+ color: var(--btn) !important;
+}
+
+.nav-container a:hover{
+ color: var(--hover) !important;
 }
 
 .headshot {
@@ -41,28 +80,30 @@ i{
 }
 
 .home a {
- color: var(--light-hover);
+ color: var(--text);
  font-size: 2.5rem;
  margin-left: 1rem;
  margin-right: 1rem;
 }
 
 .home a:hover {
- color: var(--light-btn);
+ color: var(--hover);
 }
 
 #contact-btn {
- color: var(--light-text);
- background-color: var(--light-btn);
+ color: var(--btn-text);
+ background-color: var(--btn);
  border-radius: 5px;
  font-size: 1rem;
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #contact-btn:hover {
- color: var(--light-btn);
- background-color: var(--light-hover);
+ color: var(--btn);
+ background-color: var(--btn-text);
 }
+
+/* ABOUT */
 
 .about{
  margin-bottom: var(--component-space);
@@ -71,23 +112,15 @@ i{
 }
 
 .about a {
- color: var(--light-btn);
+ color: var(--btn);
  text-decoration: none;
 }
 
 .about a:hover {
- color: var(--light-hover);
+ color: var(--hover);
 }
 
-/* .blog a {
- color: var(--light-text);
- font-size: 1.8rem;
- text-decoration: none;
-}
-
-.blog a:hover {
- color: var(--light-hover);
-} */
+/* PORTFOLIO */
 
 .portfolio{
  margin-bottom: var(--component-space);
@@ -95,15 +128,8 @@ i{
  scroll-margin-top: 6rem;
 }
 
-/* .project{
- width: 32rem;
- height: 38rem;
-} */
 
-.card-title{
- font-size: 1.6rem;
-}
-
+/* CONTACT */
 
 .contact{
  margin-top: var(--component-space);
@@ -111,8 +137,8 @@ i{
 }
 
 .contact-btn {
- color: var(--light-text);
- background-color: var(--light-btn);
+ color: var(--btn-text);
+ background-color: var(--btn);
  border-radius: 5px;
  font-size: 1.15rem;
  margin-top: 1.8rem;
@@ -120,19 +146,28 @@ i{
 }
 
 .contact-btn:hover {
- color: var(--light-btn);
- background-color: var(--light-hover);
+ color: var(--btn);
+ background-color: var(--hover);
 }
 
 .contact input,
 .contact select,
 .contact textarea {
  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ color: var(--text);
+ background-color: var(--card-background);
+}
+
+/* PROJECT */
+
+.project{
+ color: var(--text) !important;
+ background-color: var(--card-background);
 }
 
 .project-btn {
- background-color: var(--light-btn);
- color: var(--light-text);
+ background-color: var(--btn);
+ color: var(--text);
  border-radius: 5px;
  font-size: 1.15rem;
  margin-top: 1.8rem;
@@ -140,25 +175,32 @@ i{
 }
 
 .project-btn:hover {
- color: var(--light-text);
- background-color: var(--light-hover);
+ color: var(--btn);
+ background-color: var(--hover);
 }
 
 .project-btn a {
  text-decoration: none;
- color: var(--light-text);
+ color: var(--btn);
 }
 
 .project-btn a:hover {
- color: var(--light-btn);
+ color: var(--hover);
 }
 
+.card-title{
+ font-size: 1.6rem;
+}
+
+
+/* FOOTER */
+
 .footer a {
- color: var(--light-hover);
+ color: var(--btn);
  margin: 1.5rem;
  font-size: 1.5rem;
 }
 
 .footer a:hover {
- color: var(--light-btn);
+ color: var(--hover);
 }

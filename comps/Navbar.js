@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-export default function Navbar() {
+export default function Navbar({ switchTheme, theme }) {
   return (
     <nav className="navbar navbar-light navbar-expand-lg static-top">
       <div className="nav-container container-fluid mx-5">
@@ -28,7 +30,8 @@ export default function Navbar() {
             role="button">Resume</a>
           <a href="#portfolio" className="nav-link">Portfolio</a>
           <a href="#contact" className="nav-link">Contact</a>
-
+          {theme === "light" && <FontAwesomeIcon className="dark-btn" role="button" onClick={switchTheme} icon={faMoon} />}
+          {theme === "dark" && <FontAwesomeIcon className="dark-btn" role="button" onClick={switchTheme} icon={faSun} />}
         </div>
       </div>
     </nav>
