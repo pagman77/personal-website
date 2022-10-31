@@ -2,6 +2,12 @@ import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
+/**
+ *
+ * @param {Function} switchTheme - Toggles theme from dark to light.
+ * @param {String} theme - Current theme set.
+ * @returns {JSX} Navbar component.
+ */
 export default function Navbar({ switchTheme, theme }) {
   return (
     <nav className="navbar navbar-light navbar-expand-lg static-top">

@@ -1,5 +1,10 @@
 import ProjectCard from "./ProjectCard";
-
+/**
+ *
+ * @param {Array} Projects like [project, ...]
+ * project = {title, description, technologies, page, github, image: {height, width, url)}
+ * @returns {JSX} Portfolio component with populated ProjectCard components.
+ */
 export default function Portfolio({ projects }) {
 
   return (

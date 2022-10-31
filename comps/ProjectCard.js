@@ -11,8 +11,18 @@ import {
 
 import { ICONS } from "../misc/icons";
 
+/**
+ *
+ * @param {Object} {title, description, technologies, page, github, image: {url, width, height}}
+ * @returns {JSX} Card component of a portfolio project
+ */
 export default function ProjectCard({ project }) {
 
+  /**
+   *
+   * @param {Array} Array of technoliges like [javascript, python...]
+   * @returns {Array} Array of icons and ids like [{javascript: "devicon-javascript-plain"}, ...]
+   */
   function getIcons(technologies) {
 
     const projectIcons = [];
@@ -50,7 +60,7 @@ export default function ProjectCard({ project }) {
       </CardBody>
       <CardFooter className="container mb-2">
         <ButtonGroup className="d-flex justify-content-center align-items-center">
-          {project.page && <a className="btn contact-btn p-2" href={project.page} target="blank">Project Page</a>}
+          {project.page && <a className="btn contact-btn p-2" href={project.page} target="blank">Demo</a>}
           {project.github && <a className="btn contact-btn p-2" href={project.github} target="blank">Github</a>}
         </ButtonGroup>
       </CardFooter>
