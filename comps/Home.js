@@ -15,7 +15,7 @@ export default function Home() {
           <div>
             <a id="contact-btn" className="btn mb-3" href="#contact">Let&apos;s get in touch!</a>
             <div className='mb-2'>
-              <a href="/paglione_resume_10_22_22.pdf"
+              <a href="/paglione_resume_10_29_22.pdf"
                 download
                 role="button"><FontAwesomeIcon icon={faFileLines} /></a>
               <a href="https://www.linkedin.com/in/michael-paglione"
