@@ -5,7 +5,7 @@ export default function Portfolio({ projects }) {
   return (
     <div id="portfolio" className="container portfolio">
       <h2 className="text-center mb-5">Portfolio Projects</h2>
-      <div className="row d-flex justify-content-center align-items-center m-2">
+      <div className="row d-flex justify-content-center align-items-center px-5">
         {projects.map((project, idx) => {
           return <ProjectCard key={idx} project={project} />;
         })}

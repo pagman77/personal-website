@@ -5,7 +5,7 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ switchTheme, theme }) {
   return (
     <nav className="navbar navbar-light navbar-expand-lg static-top">
-      <div className="nav-container container-fluid mx-5">
+      <div className="nav-container container mx-5">
         <Link href="/">
           <a className="navbar-brand">MP</a>
         </Link>
@@ -20,7 +20,7 @@ export default function Navbar({ switchTheme, theme }) {
         </button>
       </div>
 
-      <div id="main-nav" className="collapse navbar-collapse mx-5">
+      <div id="main-nav" className="collapse mx-5 navbar-collapse text-center">
         <div className="navbar-nav">
 
           <a href="#about" className="nav-link">About</a>

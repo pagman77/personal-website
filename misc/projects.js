@@ -13,7 +13,7 @@ export const PROJECTS = [
   },
   {
     title: "Jobly - Job Searching App",
-    description: "A job board where users can sign up, filter and apply to jobs. Frontend built with React using Twitter Bootstrap and CSS3. Backend built in Node and Express with a PostgreSQL database. Database modeling with SQL, bcrypt hashing for passwords, JSONSchema for form validation, and authenciaion with JWTs",
+    description: "A job board where users can sign up, filter and apply to jobs. Frontend built with React using Twitter Bootstrap and CSS3. Backend built in Node and Express with a PostgreSQL database. Database modeling with SQL, bcrypt hashing for passwords, JSONSchema for form validation, and authentication with JWTs",
     technologies: ["bash", "bootstrap", "css3", "express", "figma", "git", "github", "heroku", "html5", "jasmine", "javascript", "jest", "nodejs", "npm", "postgresql", "react", "sqlalchemy", "vscode"],
     page: "https://high-tax.surge.sh/",
     github: "https://github.com/pagman77/react-jobly",

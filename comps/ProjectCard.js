@@ -4,11 +4,8 @@ import {
   CardBody,
   CardHeader,
   CardTitle,
-  CardImg,
-  CardImgOverlay,
   CardText,
   CardFooter,
-  Button,
   ButtonGroup
 } from 'reactstrap';
 
@@ -28,7 +25,7 @@ export default function ProjectCard({ project }) {
     return projectIcons;
   }
   return (
-    <Card inverse outline className="col-12 col-lg-5 m-5 p-3 project">
+    <Card inverse outline className="col-12 col-lg-5 p-4 mb-5 mx-4 project">
       <CardHeader>
         <CardTitle className='text-center card-title'>
           {project.title}
@@ -51,8 +48,8 @@ export default function ProjectCard({ project }) {
           })}
         </CardText>
       </CardBody>
-      <CardFooter className="d-flex justify-content-center align-content-center">
-        <ButtonGroup className="w-100">
+      <CardFooter className="container mb-2">
+        <ButtonGroup className="d-flex justify-content-center align-items-center">
           {project.page && <a className="btn contact-btn p-2" href={project.page} target="blank">Project Page</a>}
           {project.github && <a className="btn contact-btn p-2" href={project.github} target="blank">Github</a>}
         </ButtonGroup>

@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div id='about' className="container about">
-      <div className="row mt-5 justify-content-center align-items-center text-center my-5">
-        <div className="col-sm-12 col-md-4 text-center mx-5">
-          <Image className="music-headshot" src="/music.jpg" alt="Photo of Michael" width={450} height={450} />
+    <div id='about' className="container-fluid about">
+      <div className="row justify-content-center align-items-center text-center">
+        <div className="col-sm-12 col-md-4 text-center">
+          <Image className="music-headshot p-3" src="/music.jpg" alt="Photo of Michael" width={450} height={450} />
         </div>
-        <div className="col-sm-12 col-md-4 text-star mx-5">
+        <div className="col-sm-12 col-md-4 mx-5">
           <h2 className="mb-3">
             About Me
           </h2>

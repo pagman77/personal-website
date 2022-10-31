@@ -37,14 +37,14 @@ export default function Contact() {
 
   return (
     <div id='contact' className='container contact'>
-      <div className="row d-flex justify-content-center align-item-center my-5">
+      <div className="row d-flex justify-content-center align-item-center">
         <div className="col-12 w-75">
-          <h3 className='text-center'>Get in touch with me!</h3>
+          <h3 className='text-center mb-4'>Get in touch with me!</h3>
           <form className="my-3 rounded" onSubmit={handleSubmit}>
 
             {/* NAME */}
 
-            <label className="mb-1" htmlFor="name">Name</label>
+            <label className="mb-2" htmlFor="name">Name</label>
             <div className='input-group mb-3'>
               <span className='input-group-text'><FontAwesomeIcon icon={faUser} /></span>
               <input
@@ -59,7 +59,7 @@ export default function Contact() {
 
             {/* EMAIL */}
 
-            <label className="mb-1" htmlFor="email">Email</label>
+            <label className="mb-2" htmlFor="email">Email</label>
             <div className='input-group mb-3'>
               <span className='input-group-text'><FontAwesomeIcon icon={faEnvelope} /></span>
               <input
@@ -74,7 +74,7 @@ export default function Contact() {
 
             {/* INQURY TYPE */}
 
-            <label htmlFor="subject" className="form-label mb-1">What is your question about?</label>
+            <label htmlFor="subject" className="form-label mb-2">What is your question about?</label>
             <div className="input-group mb-3">
               <span className="input-group-text">
                 <FontAwesomeIcon icon={faMessage} />
@@ -87,7 +87,7 @@ export default function Contact() {
               </select>
             </div>
 
-            <label className="mb-1" htmlFor="comments">I&apos;d love to hear your thoughts.</label>
+            <label className="mb-2" htmlFor="comments">I&apos;d love to hear your thoughts.</label>
             <div className="form-group mb-3">
               <textarea id="comments"
                 rows={6}
@@ -96,7 +96,7 @@ export default function Contact() {
                 onChange={handleChange}
                 value={formData.comments}></textarea>
             </div>
-            <div className="text-center my-2">
+            <div className="text-center mb-5">
               <button type="submit" className="btn contact-btn">Submit</button>
             </div>
           </form>
