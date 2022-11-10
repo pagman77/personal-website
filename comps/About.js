@@ -15,8 +15,8 @@ export default function About() {
             Software Engineer && Musician
           </h5>
           <p>
-            I have spent my life consistently learning, growing, and exploring as a musician. I found that this directly correlates to being a successful software engineer. I have spent the last decade combining my experiences in music with a career in retail before I made the pivot into the Fullstack Web Development program at&nbsp;
-            <a href="http://www.rithmschool.com" target="blank">Rithm School</a>. I enjoy leveraging my skills in all three industries to provide innovative, creative, and meaningful solutions as a software engineer.
+            I have spent my life consistently learning, growing, and exploring new ideas as a musician since I began playing at the age of ten. To my surprise these core values also correlate to being a successful software engineer. I have spent the last decade combining my experiences in music with a career in retail before I made the recent pivot into the Full Stack Web Development program at&nbsp;
+            <a href="http://www.rithmschool.com" target="blank">Rithm School</a>. Rithm provided me with the tools, confidence, and resources to leverage my previous experiences to be creative in my approach. I enjoy leveraging my skills in all three industries to provide creative and impactful solutions as a software engineer.
           </p>
         </div>
       </div>

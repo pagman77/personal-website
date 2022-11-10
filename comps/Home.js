@@ -10,12 +10,12 @@ export default function Home() {
       <div className="row align-items-center justify-content-center">
         <div className="col-sm-12 col-md-4 text-center">
           <h1 className='mb-3'>Hi, I&apos;m Michael</h1>
-          <h3 className='mb-5'>Fullstack Software Engineer</h3>
-          <p className='mb-4'>Hello, I&apos;m thrilled you made it to my website! I am a Fullstack Engineer that embraces innovative and creative software solutions. I greatly value human connection and learning.</p>
+          <h3 className='mb-5'>Full Stack Software Engineer</h3>
+          <p className='mb-4'>Hello, I&apos;m thrilled you made it to my website! I am a Full Stack Engineer that embraces creative software solutions. I greatly value human connection and learning.</p>
           <div>
             <a id="contact-btn" className="btn mb-3" href="#contact">Let&apos;s get in touch!</a>
             <div className='mb-2'>
-              <a href="/paglione_resume_10_29_22.pdf"
+              <a href="/paglione_resume_11_9_22.pdf"
                 download
                 role="button"><FontAwesomeIcon icon={faFileLines} /></a>
               <a href="https://www.linkedin.com/in/michael-paglione"

@@ -7,8 +7,10 @@ import Contact from '../comps/Contact';
 import Footer from '../comps/Footer';
 import Navbar from '../comps/Navbar';
 import Portfolio from '../comps/Portfolio';
+import ScrollButton from '../comps/ScrollButton';
 
 import { PROJECTS } from '../misc/projects';
+
 
 export default function Main() {
 
@@ -20,6 +22,15 @@ export default function Main() {
   function switchTheme() {
     if (theme === "light") setTheme("dark");
     if (theme === "dark") setTheme("light");
+  }
+  /**
+   * Resets window scroll position.
+   */
+  function scrollTop() {
+    //WEBKIT
+    document.body.scrollTop = 0;
+    //BLINK/GECKO
+    document.documentElement.scrollTop = 0;
   }
 
   useEffect(function toggleTheme() {
@@ -39,6 +50,7 @@ export default function Main() {
       <Portfolio projects={PROJECTS} />
       <Contact />
       <Footer />
+      <ScrollButton scrollTop={scrollTop} />
     </>
   );
 }
