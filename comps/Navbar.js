@@ -31,7 +31,7 @@ export default function Navbar({ switchTheme, theme }) {
 
           <a href="#about" className="nav-link">About</a>
           <a className="nav-link"
-            href="/paglione_resume_11_9_22.pdf"
+            href="/paglione_resume_3_19_23.pdf"
             download
             role="button">Resume</a>
           <a href="#portfolio" className="nav-link">Portfolio</a>

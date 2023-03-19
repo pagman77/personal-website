@@ -18,7 +18,7 @@ export default function Footer() {
           target="blank"><FontAwesomeIcon icon={faInstagram} /></a>
       </div>
       <div className='my-3'>
-        <span>&copy;&nbsp;<small>2022 Michael Paglione</small></span>
+        <span>&copy;&nbsp;<small>2023 Michael Paglione</small></span>
       </div>
     </footer >
   );
